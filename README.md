@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# *** Assignment of Terribly Tiny Tales by Sameer Sahu***
+ ============= ============= =============
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple web application built using React that allows users to count the words in a text file from https://terriblytinytaleslikhit.netlify.app/ and display the top 20 most frequently occurring words in a bar chart. The user can also export the data as a CSV file. This assignment is done by sameer sahu for the recruitment process of Terribly tiny tales.
 
-## Available Scripts
 
-In the project directory, you can run:
+### `Deployment link`
+  https://terriblytinytaleslikhit.netlify.app/
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Libraries and Plugins Used`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+*  React - a JavaScript library for building user interfaces
+*  recharts - a charting library for React that makes it easy to create reusable charts
+*  file-saver - enables you to save file in machine
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `Components`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The App component contains all the main logic and functionality of the app. It has three states:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* React: The main library for building user interfaces in JavaScript.
 
-### `npm run eject`
+* useState: A React hook that allows functional components to have state variables.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* saveAs: A function from the 'file-saver' library that enables saving files on the client-side.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* BarChart: A component from the 'recharts' library used to render a bar chart.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Bar: A component from the 'recharts' library used to define the bars within the bar chart.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* XAxis: A component from the 'recharts' library used to render the X-axis of the bar chart.
 
-## Learn More
+* YAxis: A component from the 'recharts' library used to render the Y-axis of the bar chart.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* CartesianGrid: A component from the 'recharts' library used to render the grid lines in the chart.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Tooltip: A component from the 'recharts' library used to display tooltips on the chart.
 
-### Code Splitting
+* Legend: A component from the 'recharts' library used to render a legend for the chart.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### `Explanation`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The code starts by importing necessary dependencies from the react, file-saver, and recharts libraries.
 
-### Advanced Configuration
+The App component is defined as a functional component using the useState hook from React. It initializes two state variables, data and loading, using the useState hook.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The fetchData function is an asynchronous function that is triggered when the "Submit" button is clicked.
 
-### Deployment
+The exportData function is triggered when the "Export" button is clicked. It converts the data into a CSV format, creates a Blob object with the CSV content, and saves it as a file using the saveAs function from the file-saver library.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Finally, the App component is exported as the default export.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+
+
