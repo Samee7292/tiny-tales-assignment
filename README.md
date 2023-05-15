@@ -1,11 +1,11 @@
 # *** Assignment of Terribly Tiny Tales by Sameer Sahu***
  ============= ============= =============
 
-This is a simple web application built using React that allows users to count the words in a text file from https://terriblytinytaleslikhit.netlify.app/ and display the top 20 most frequently occurring words in a bar chart. The user can also export the data as a CSV file. This assignment is done by sameer sahu for the recruitment process of Terribly tiny tales.
+This is a simple web application built using React that allows users to count the words in a text file from https://tinytalessameer.netlify.app/ and display the top 20 most frequently occurring words in a bar chart. The user can also export the data as a CSV file. This assignment is done by sameer sahu for the recruitment process of Terribly tiny tales.
 
 
 ### `Deployment link`
-  https://terriblytinytaleslikhit.netlify.app/
+  https://tinytalessameer.netlify.app/
 
 
 ### `Libraries and Plugins Used`
